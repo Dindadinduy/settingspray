@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sitak day 3</title>
+    <!-- Bootstrap Css Start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootsrap Css End -->
+    <style>
+      body {
+        /* Soft modern gradient */
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        min-height: 100vh;
+      }
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(10px);
+      }
+      .custom-card-img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .custom-carousel-img {
+        height: 300px;
+        object-fit: cover;
+      }
+      .hover-shadow:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg glass-effect shadow-sm rounded-4 mb-4 px-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-primary" href="#">Brand</a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu border-0 shadow-sm rounded-3">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 rounded-pill bg-light border-0"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-primary rounded-pill px-4" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <div class="row g-4">
+        <!-- Left Column: Card and Carousel -->
+        <div class="col-lg-6">
+          <!-- Card Start -->
+          <div class="card border-0 shadow-sm rounded-4 hover-shadow mb-4">
+            <img
+              src="assets/images/ayam_geprek.jpeg"
+              class="card-img-top custom-card-img rounded-top-4"
+              alt="Ayam Geprek"
+            />
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Ayam Geprek Spesial</h5>
+              <p class="card-text text-muted">
+                This is a modern minimal card. The image has been resized for a
+                cleaner look. Perfect for highlighting content.
+              </p>
+              <p class="card-text">
+                <small class="text-secondary fw-medium"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Card End -->
+           
+          <!-- Carousel Start -->
+          <div
+            id="carouselExample"
+            class="carousel slide shadow-sm rounded-4 overflow-hidden hover-shadow mb-4"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/images/carousel/kucing.JPEG"
+                  class="d-block w-100 custom-carousel-img"
+                  alt="Kucing"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/carousel/anjing.JPEG"
+                  class="d-block w-100 custom-carousel-img"
+                  alt="Anjing"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/carousel/kelinci.JPEG"
+                  class="d-block w-100 custom-carousel-img"
+                  alt="Kelinci"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carousel End -->
+
+          
+  
+        </div>
+
+        <!-- Right Column: Input Groups -->
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm rounded-4 glass-effect p-4 h-100">
+            <h4 class="fw-bold mb-4">Input Forms</h4>
+
+            <!-- Input Group Start -->
+            <div class="input-group mb-4 shadow-sm rounded-3">
+              <span
+                class="input-group-text bg-white border-0 text-primary fw-bold"
+                id="basic-addon1"
+                >@</span
+              >
+              <input
+                type="text"
+                class="form-control border-0 bg-light py-2"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group mb-4 shadow-sm rounded-3">
+              <input
+                type="text"
+                class="form-control border-0 bg-light py-2"
+                placeholder="Recipient’s username"
+                aria-label="Recipient’s username"
+                aria-describedby="basic-addon2"
+              />
+              <span
+                class="input-group-text bg-white border-0 text-muted"
+                id="basic-addon2"
+                >@example.com</span
+              >
+            </div>
+
+            <div class="mb-4">
+              <label for="basic-url" class="form-label fw-medium"
+                >Your vanity URL</label
+              >
+              <div class="input-group shadow-sm rounded-3">
+                <span
+                  class="input-group-text bg-white border-0 text-muted"
+                  id="basic-addon3"
+                  >https://example.com/users/</span
+                >
+                <input
+                  type="text"
+                  class="form-control border-0 bg-light py-2"
+                  id="basic-url"
+                  aria-describedby="basic-addon3 basic-addon4"
+                />
+              </div>
+              <div class="form-text mt-2" id="basic-addon4">
+                Example help text goes outside the input group.
+              </div>
+            </div>
+
+            <div class="input-group mb-4 shadow-sm rounded-3">
+              <span
+                class="input-group-text bg-white border-0 fw-bold text-success"
+                >$</span
+              >
+              <input
+                type="text"
+                class="form-control border-0 bg-light py-2"
+                aria-label="Amount (to the nearest dollar)"
+                placeholder="0.00"
+              />
+              <span class="input-group-text bg-white border-0 text-muted"
+                >.00</span
+              >
+            </div>
+
+            <div class="input-group mb-4 shadow-sm rounded-3">
+              <input
+                type="text"
+                class="form-control border-0 bg-light py-2"
+                placeholder="Username"
+                aria-label="Username"
+              />
+              <span class="input-group-text bg-white border-0 text-primary"
+                >@</span
+              >
+              <input
+                type="text"
+                class="form-control border-0 bg-light py-2"
+                placeholder="Server"
+                aria-label="Server"
+              />
+            </div>
+
+            <div class="input-group mb-2 shadow-sm rounded-3">
+              <span class="input-group-text bg-white border-0 text-muted"
+                >Notes</span
+              >
+              <textarea
+                class="form-control border-0 bg-light py-2"
+                aria-label="With textarea"
+                rows="3"
+                placeholder="Write something..."
+              ></textarea>
+            </div>
+            <!-- Input Group End -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tugas Bootstrap Corousel Start -->
+    <div class="container mb-5">
+      <div id="carouselTugas" class="carousel slide shadow-sm rounded-4 overflow-hidden">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/carousel/tari_merak.JPEG" class="d-block w-100 custom-carousel-img" alt="Tari Merak">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/carousel/Tari_RatoeJaroeh.JPEG" class="d-block w-100 custom-carousel-img" alt="Tari RatoeJaroeh">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/carousel/Tari_Piring.JPEG" class="d-block w-100 custom-carousel-img" alt="Tari Piring">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTugas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTugas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Tugas Bootstrap Corousel End -->
+
+    <!-- Script Bootstrap Start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script Bootstrap End -->
+
+    <!-- Penambahan Fitur JS Baru Start -->
+    <script>
+      // 1. FEATURE: FUNCTION
+      // Fungsi untuk menampilkan notifikasi pesan kustom
+      function tampilkanPesan(teks) {
+        alert("Sistem Notifikasi: " + teks);
+        console.log("Notifikasi ditampilkan: " + teks);
+      }
+
+      // 2. FEATURE: DOM (Document Object Model)
+      // Mengambil elemen-elemen dari halaman menggunakan selector
+      const formCari = document.querySelector('form[role="search"]');
+      const inputCari = formCari.querySelector('input[type="search"]');
+      const judulKartu = document.querySelector(".card-title");
+
+      // 3. FEATURE: EVENT HANDLING & FORM HANDLING
+      // Menangani peristiwa ketika formulir pencarian dikirim (submit)
+      formCari.addEventListener("submit", function (event) {
+        // Mencegah halaman melakukan refresh (Form Handling Dasar)
+        event.preventDefault();
+
+        // Mengambil nilai dari input (Form Handling)
+        const kataKunci = inputCari.value.trim();
+
+        if (kataKunci !== "") {
+          // Memanggil fungsi yang sudah dibuat sebelumnya
+          tampilkanPesan("Anda mencari '" + kataKunci + "'");
+        } else {
+          tampilkanPesan("Harap masukkan kata kunci untuk mencari!");
+        }
+      });
+
+      // Contoh Event Handling lainnya: Klik pada judul kartu
+      judulKartu.addEventListener("click", function () {
+        // Manipulasi DOM: Mengubah gaya elemen saat diklik
+        this.style.transition = "all 0.3s ease";
+        this.style.color = this.style.color === "rgb(13, 110, 253)" ? "#000" : "#0D6EFD";
+        console.log("DOM Event: Judul kartu diklik dan warna diubah.");
+      });
+
+      // Menambahkan log ke konsol untuk menandakan JS berhasil dimuat
+      console.log("Fitur JS Baru (DOM, Event, Function, Form Handling) telah siap!");
+    </script>
+    <!-- Penambahan Fitur JS Baru End -->
+  </body>
+</html>
